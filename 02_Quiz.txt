@@ -1,0 +1,44 @@
+
+1. Select the code which produces this table
+
+SELECT name, population
+   FROM world
+WHERE population BETWEEN 10000000 AND 1250000
+
+2. Pick the result you would obtain from this code:
+
+Table-E
+
+Albania 3200000
+Algeria 32900000
+
+3. Select the code which shows the countries that end in A or L
+
+SELECT name FROM world
+WHERE name LIKE '%a' OR name LIKE '%1`
+
+4. Pick the result from the query
+
+name    length(name)
+Italy   5
+Malta   5
+Spain5  5
+
+5. Here are the first few rows of the world table:
+
+Andorra 936
+
+6. Select the code that would show the countries with an area larger than 50000 and a population smaller than 10000000
+
+SELECT name, area, population
+   FROM world
+WHERE area > 50000 AND population < 1000000
+
+7. Select the code that shows the population density of China, Australia, Nigeria and France
+
+
+SELECT name, population/area
+FROM world
+WHERE name IN ('China', 'Nigeria', 'France', 'Australia')
+
+
